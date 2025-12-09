@@ -1,6 +1,4 @@
 
-
-# Functions
 def add(a, b):
     return a + b
 
@@ -15,7 +13,6 @@ def divide(a, b):
         return "Error! Cannot divide by zero."
     return a / b
 
-# Dictionary to simulate switch-case
 operations = {
     "1": add,
     "2": subtract,
@@ -23,7 +20,6 @@ operations = {
     "4": divide
 }
 
-# Main loop
 while True:
     print("\n----- SIMPLE CALCULATOR -----")
     print("1. Add")
@@ -36,7 +32,7 @@ while True:
 
     if choice == "5":
         print("Exiting calculator. Goodbye!")
-        break  # Exit the loop
+        break  
 
     if choice in operations:
         num1 = float(input("Enter first number: "))
